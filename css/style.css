@@ -1,0 +1,453 @@
+
+/*=========== Geral ==========*/
+* 	{margin: 0; 
+	padding: 0; 
+	font-size: 100%; 
+	border: none; 
+	outline: none; 
+	font-weight: 300; 
+	box-sizing: 
+	border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #4f6228;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {max-width: 100%;}
+
+/*=========== Container ==========*/
+.container {
+	width: 100%; 
+	float: left; 
+	padding: 3% 4%; 
+	text-align: center;
+}
+
+/*=========== Cores dos Background ==========*/
+.bg-body {
+	background: linear-gradient(to top,#76933c,#4f6228);
+}
+
+.bg-gradient {
+	background: linear-gradient(to right,#76933c,#4f6228);
+}
+
+.bg-grid {
+	background-color: #c4d79b;
+}
+
+.bg-escuro {
+	background-color: #4f6228;
+}
+
+.bg-claro {
+	background-color: #76933c;
+}
+
+/*=========== Helpers ==========*/
+.radius {border-radius: 7px;}
+
+/* Cabeçalho */
+.logo {
+	background: url(../img/img.png) center center/56px no-repeat;
+	width: 56px; 
+	height: 56px; 
+	float: left; 
+	font-size: 0;
+}
+
+.btn-menu {width: 56px; 
+	height: 56px; 
+	float: right; 
+	color: #fff; 
+	border-radius:56px; 
+	cursor: pointer;
+	text-align: center; 
+}
+
+/* Menu */
+.menu {
+	background-color: rgba(0,0,0,0.9); 
+	display:none; 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	top: 0; 
+	left: 0;
+}
+
+.btn-close {
+	font-size: 1.8em; 
+	color: #fff; 
+	float: right; 
+	cursor: pointer; 
+	margin: 1% 2% 0 0;
+}
+
+.menu ul {
+	width: 100%; 
+	float: left; 
+	text-align: center;
+}
+
+.menu li {
+	padding: 1.2%;
+}
+
+.menu li a {
+	font-size: 1.8em; 
+	color: #fff; 
+	padding: 1.5% 2%;
+}
+
+.menu li a:hover {
+	border:1px solid #4f6228;
+}
+
+/* Banner */
+.titulo {
+	width: 100%;
+}
+
+.titulo h2 {
+	font-size: 2.5em; 
+	color: #fff; 
+	font-weight: 700;
+}
+
+.titulo h3 {
+	font-size: 1.5em; 
+	color: #fff;
+}
+
+.botoes {
+	width: 100%; 
+	margin-top: 2%;
+}
+
+.botoes i {
+	float: right;
+}
+
+.btn {
+	width: 100%; 
+	font-size: 1.2em; 
+	text-align: left; 
+	cursor: pointer; 
+	padding: 2%; }
+
+.btn-contatos { 
+	color: #fff;
+}
+
+.btn-links {
+	color:#fff ; 
+	margin-top: 2%;
+}
+
+/* Grid */
+.grid-card {
+	width: 100%; 
+	text-align: left;  
+	margin-bottom: 3%;
+}
+
+.grid-card img {
+	width: 25%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 35%;
+	margin-right: 38%;
+	border-radius: 7px 7px 0 0;
+}
+
+.textos {
+	padding: 7%;
+}
+
+.textos a {
+	font-size: 1.5em; 
+	color: #130400; 
+	font-weight: 700; 
+}
+
+
+.textos h4 {
+	font-size: 1.2em; 
+	color: #130400; 
+	margin-top: 2%; 
+}
+
+.textos p {
+	margin-top: 6%; 
+	color: #130400; 
+	line-height: 1.5em;
+}
+
+
+/* Informações */
+.informacoes h2 {
+	font-size: 1.5em; 
+	color: #fff; 
+	font-weight: 700;
+}
+
+.informacoes h3 {
+	color: #fff;
+}
+
+.informacoes form {
+	margin-top: 2%;
+}
+
+.informacoes input {
+	width: 100%;  
+	color: #fff; 
+	font-size: 1.2em; 
+	border: 1px solid rgba(255,255,255,0.3); 
+	padding: 5%; 
+}
+
+.informacoes button {
+	width: 100%;  
+	color:#fff; 
+	font-size: 1.2em; 
+	padding: 5%; 
+	cursor: pointer; 
+	margin-top: 2%; 
+}
+
+/* Rodapé */
+.redes-sociais-icones a {
+	font-size: 1.5em; 
+	color: rgba(255,255,255,0.7); 
+	margin-right: 3%;
+}
+
+.redes-sociais-icones a:last-child {
+	margin-right: 0;
+}
+
+.redes-sociais-icones a:hover {
+	color: rgb(255,255,255);
+}
+
+.copyright {
+	color: rgba(255, 255, 255, 0.7); 
+	margin-top:2%;
+}
+
+
+/* ========== Direcionamento das telas ==========*/
+/* Celulares - Smartphones */
+@media screen and (min-width: 300px) {
+.logo {
+	width: 56px; 
+	background: url(../img/logo.png) center center/56px no-repeat;
+}
+
+.btn {
+	font-size: 2em;
+}
+
+.grid-card {
+	width: 100%; 
+	float: left; 
+	margin-right: 0;
+}
+
+}
+
+/* Celulares - Smartphones */
+@media screen and (min-width: 600px) {
+.logo {
+	width: 56px; 
+	background: url(../img/logo.png) center center/56px no-repeat;
+}
+
+.btn {
+	font-size: 2em;
+}
+
+.grid-card {
+	width: 49%; 
+	float: left; 
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(2){
+	margin-right: 0;
+}
+
+.grid-card:nth-child(3){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(4){
+	margin-right: 0;
+}
+
+.grid-card:nth-child(5){
+	margin-right: 2%;
+}
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+.titulo {
+	width: 67%; 
+	float: left; text-align: left;
+}
+
+.titulo h2 {
+	font-size: 3em;
+}
+
+.titulo h3 {
+	font-size: 2em;
+}
+
+.botoes {
+	width: 30%; 
+	float: right; 
+	margin-top: 0; 
+}
+
+.grid-card {
+	width: 32%; 
+	float: left; 
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(2){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(3){
+	margin-right: 0;
+}
+
+.grid-card:nth-child(4){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(5){
+	margin-right: 0;
+}
+
+.informacoes h2 {
+	font-size: 2em;
+}
+
+.informacoes h3 {
+	font-size: 1.5em;
+}
+
+.informacoes input {
+	width: 40%; 
+	padding: 2%; 
+	float: auto; 
+	margin-right: 1%;
+}
+
+.informacoes button {
+	width: 19%; 
+	padding: 2%; 
+	float: auto; 
+	margin-top: 0;
+}
+
+}
+
+/* Desktops */
+@media screen and (min-width: 990px) {
+.titulo {
+	width: 67%; 
+	float: left; text-align: left;
+}
+
+.titulo h2 {
+	font-size: 3em;
+}
+
+.titulo h3 {
+	font-size: 2em;
+}
+
+.botoes {
+	width: 30%; 
+	float: right; 
+	margin-top: 0; 
+}
+
+.grid-card {
+	width: 18%; 
+}
+
+.grid-card:nth-child(2){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(3){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(4){
+	margin-right: 2%;
+}
+
+.grid-card:nth-child(5){
+	margin-right: 0;
+}
+
+}
+
+/* WideScreens */
+@media screen and (min-width: 1280px) {
+.btn-menu {
+	display: none;
+}
+
+.btn-close {
+	display: none;
+}
+
+.menu {
+	display: block !important; 
+	background-color: #4f6228; 
+	width: auto; 
+	height: 56px; 
+	line-height: 56px; 
+	float: right; 
+	position: static;
+}
+
+.menu li {
+	padding: 0; 
+	float: left;
+}
+
+.menu li a {
+	color:#130400; 
+	font-size: 1em; 
+	padding: 15px; 
+}
+
+.menu li a:hover {
+	border: none; 
+	color:#76933c; 
+}
+
+}
+
