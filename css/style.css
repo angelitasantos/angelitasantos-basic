@@ -11,7 +11,7 @@
 	font-family: 'Lato', sans-serif;
 }
 
-body {
+#body-bgc {
 	background-color: #4f6228;
 }
 
@@ -26,7 +26,7 @@ ul {
 img {max-width: 100%;}
 
 /*=========== Container ==========*/
-.container {
+.conteudo {
 	width: 100%; 
 	float: left; 
 	padding: 3% 4%; 
@@ -34,39 +34,41 @@ img {max-width: 100%;}
 }
 
 /*=========== Cores dos Background ==========*/
-.bg-body {
+.bgc-body {
 	background: linear-gradient(to top,#76933c,#4f6228);
 }
 
-.bg-gradient {
+.bgc-gradient {
 	background: linear-gradient(to right,#76933c,#4f6228);
 }
 
-.bg-grid {
+.bgc-grid {
 	background-color: #c4d79b;
 }
 
-.bg-escuro {
+.bgc-escuro {
 	background-color: #4f6228;
 }
 
-.bg-claro {
+.bgc-claro {
 	background-color: #76933c;
 }
 
 /*=========== Helpers ==========*/
-.radius {border-radius: 7px;}
+.radius {
+	border-radius: 7px;
+}
 
 /* Cabeçalho */
 .logo {
-	background: url(../img/img.png) center center/56px no-repeat;
+	background: url(../img/logo.png) center center/56px no-repeat;
 	width: 56px; 
 	height: 56px; 
 	float: left; 
 	font-size: 0;
 }
 
-.btn-menu {width: 56px; 
+.botao-menu {width: 56px; 
 	height: 56px; 
 	float: right; 
 	color: #fff; 
@@ -86,7 +88,7 @@ img {max-width: 100%;}
 	left: 0;
 }
 
-.btn-close {
+.botao-close {
 	font-size: 1.8em; 
 	color: #fff; 
 	float: right; 
@@ -112,6 +114,7 @@ img {max-width: 100%;}
 
 .menu li a:hover {
 	border:1px solid #4f6228;
+	text-decoration: none;
 }
 
 /* Banner */
@@ -139,18 +142,18 @@ img {max-width: 100%;}
 	float: right;
 }
 
-.btn {
+.botao {
 	width: 100%; 
 	font-size: 1.2em; 
 	text-align: left; 
 	cursor: pointer; 
 	padding: 2%; }
 
-.btn-contatos { 
+.botao-contatos { 
 	color: #fff;
 }
 
-.btn-links {
+.botao-links {
 	color:#fff ; 
 	margin-top: 2%;
 }
@@ -180,7 +183,6 @@ img {max-width: 100%;}
 	color: #130400; 
 	font-weight: 700; 
 }
-
 
 .textos h4 {
 	font-size: 1.2em; 
@@ -242,21 +244,21 @@ img {max-width: 100%;}
 	color: rgb(255,255,255);
 }
 
-.copyright {
+#copyright {
 	color: rgba(255, 255, 255, 0.7); 
 	margin-top:2%;
 }
 
-
 /* ========== Direcionamento das telas ==========*/
-/* Celulares - Smartphones */
-@media screen and (min-width: 300px) {
+
+@media screen and (min-width: 330px) {
+
 .logo {
 	width: 56px; 
 	background: url(../img/logo.png) center center/56px no-repeat;
 }
 
-.btn {
+.botao {
 	font-size: 2em;
 }
 
@@ -266,16 +268,54 @@ img {max-width: 100%;}
 	margin-right: 0;
 }
 
+#rodape{
+	font-size: 1.2em;
 }
 
-/* Celulares - Smartphones */
+.botao-menu {
+	display: none;
+}
+
+.botao-close {
+	display: none;
+}
+
+.menu {
+	display: block !important; 
+	background-color: #4f6228; 
+	width: auto; 
+	height: 56px; 
+	line-height: 56px; 
+	float: right; 
+	position: static;
+}
+
+.menu li {
+	padding: 0; 
+	float: left;
+}
+
+.menu li a {
+	color:#130400; 
+	font-size: 1em; 
+	padding: 15px; 
+}
+
+.menu li a:hover {
+	border: none; 
+	color:#76933c; 
+}
+
+}
+
 @media screen and (min-width: 600px) {
+
 .logo {
 	width: 56px; 
 	background: url(../img/logo.png) center center/56px no-repeat;
 }
 
-.btn {
+.botao {
 	font-size: 2em;
 }
 
@@ -301,10 +341,32 @@ img {max-width: 100%;}
 	margin-right: 2%;
 }
 
+.informacoes h2 {
+	font-size: 2em;
 }
 
-/* Tablets */
+.informacoes h3 {
+	font-size: 1.5em;
+}
+
+.informacoes input {
+	width: 40%; 
+	padding: 2%; 
+	float: auto; 
+	margin-right: 1%;
+}
+
+.informacoes button {
+	width: 19%; 
+	padding: 2%; 
+	float: auto; 
+	margin-top: 0;
+}
+
+}
+
 @media screen and (min-width: 768px) {
+
 .titulo {
 	width: 67%; 
 	float: left; text-align: left;
@@ -346,43 +408,13 @@ img {max-width: 100%;}
 	margin-right: 0;
 }
 
-.informacoes h2 {
-	font-size: 2em;
 }
 
-.informacoes h3 {
-	font-size: 1.5em;
-}
-
-.informacoes input {
-	width: 40%; 
-	padding: 2%; 
-	float: auto; 
-	margin-right: 1%;
-}
-
-.informacoes button {
-	width: 19%; 
-	padding: 2%; 
-	float: auto; 
-	margin-top: 0;
-}
-
-}
-
-/* Desktops */
 @media screen and (min-width: 990px) {
+
 .titulo {
 	width: 67%; 
 	float: left; text-align: left;
-}
-
-.titulo h2 {
-	font-size: 3em;
-}
-
-.titulo h3 {
-	font-size: 2em;
 }
 
 .botoes {
@@ -391,63 +423,28 @@ img {max-width: 100%;}
 	margin-top: 0; 
 }
 
+}
+
+@media screen and (min-width: 1280px) {
+
 .grid-card {
 	width: 18%; 
 }
-
+	
 .grid-card:nth-child(2){
 	margin-right: 2%;
 }
-
+	
 .grid-card:nth-child(3){
 	margin-right: 2%;
 }
-
+	
 .grid-card:nth-child(4){
 	margin-right: 2%;
 }
-
+	
 .grid-card:nth-child(5){
 	margin-right: 0;
 }
-
+	
 }
-
-/* WideScreens */
-@media screen and (min-width: 1280px) {
-.btn-menu {
-	display: none;
-}
-
-.btn-close {
-	display: none;
-}
-
-.menu {
-	display: block !important; 
-	background-color: #4f6228; 
-	width: auto; 
-	height: 56px; 
-	line-height: 56px; 
-	float: right; 
-	position: static;
-}
-
-.menu li {
-	padding: 0; 
-	float: left;
-}
-
-.menu li a {
-	color:#130400; 
-	font-size: 1em; 
-	padding: 15px; 
-}
-
-.menu li a:hover {
-	border: none; 
-	color:#76933c; 
-}
-
-}
-

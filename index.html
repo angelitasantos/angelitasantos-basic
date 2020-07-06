@@ -25,42 +25,38 @@
         <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
     </head>
 
-    <body>
+    <body id="body-bgc">
 
         <!-- Cabeçalho --> 
-        <header class="container cabecalho">
-           <a href="index.html"><h1 class="logo"> Angelita Santos </h1></a>
-           <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+        <header class="conteudo cabecalho">
+           <a href="index.html"><h1 class="logo"></h1></a>
+           <button class="botao-menu bgc-gradient"><i class="fa fa-bars fa-lg"></i></button>
            <nav class="menu">
-               <a class="btn-close"><i class="fa fa-times"></i></a>
+               <a class="botao-close"><i class="fa fa-times"></i></a>
                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="index.html">Sobre</a></li>
                    <li><a href="index.html">Habilidades</a></li>
                    <li><a href="index.html">Experiências</a></li>
-                   <li><a href="index.html">Projetos</a></li>
-                   <li><a href="index.html">Conhecimento</a></li>
                </ul>
            </nav>          
         </header>
 
         <!-- Banner --> 
-        <div class="container banner bg-body">
+        <div class="conteudo banner bgc-body">
             <div class="titulo">
-                <h2> NUNCA PARE DE APRENDER! </h2>
+                <h2 id="banner_titulo"></h2>
                 <h3> Aprenda com as suas experiências e estabeleça ações para que o seu aprendizado seja sempre inquieto e constante. </h3>
             </div>
             <div class="botoes">
-                <a href="https://www.linkedin.com/in/angelitasantos/" target="_blank"><button class="btn btn-contatos bg-claro radius"> Contato <i class="fa fa-arrow-circle-right"></i></button></a>
-                <a href="https://github.com/angelitasantos" target="_blank"><button class="btn btn-links bg-body radius"> Projetos <i class="fa fa-arrow-circle-right"></i></button></a>
+                <a href="https://www.linkedin.com/in/angelitasantos/" target="_blank"><button class="botao botao-contatos bgc-claro radius"> Contato <i class="fa fa-arrow-circle-right"></i></button></a>
+                <a href="https://github.com/angelitasantos" target="_blank"><button class="botao botao-links bgc-body radius"> Projetos <i class="fa fa-arrow-circle-right"></i></button></a>
             </div>
         </div>
 
         <!-- Grid --> 
-        <main class="container grid">
+        <main class="conteudo grid">
 
             <!-- Sobre -->
-            <article class="grid-card bg-grid radius">
+            <article class="grid-card bgc-grid radius">
                <a href="#"><img src="img/who.png" alt="Who am I?"></a>
                <div class="textos">
                    <a href="# "name="Who"> Quem sou eu? </a>
@@ -74,7 +70,7 @@
             </article>
 
             <!-- Habilidades -->
-            <article class="grid-card bg-grid radius">
+            <article class="grid-card bgc-grid radius">
                <a href="#"><img src="img/skills.png" alt="Skills"></a>
                <div class="textos">
                    <a href="#" name="Skills"> Habilidades </a>
@@ -87,7 +83,7 @@
             </article>
 
             <!-- Experiências -->
-            <article class="grid-card bg-grid radius">
+            <article class="grid-card bgc-grid radius">
                <a href="#"><img src="img/experience.png" alt="Work Experience"></a>
                <div class="textos">
                    <a href="#" name="Experience"> Experiências </a>
@@ -101,7 +97,7 @@
             </article>
 
             <!-- Projetos -->
-            <article class="grid-card bg-grid radius">
+            <article class="grid-card bgc-grid radius">
                <a href="#"><img src="img/projects.png" alt="Projects"></a>
                <div class="textos">
                    <a href="#" name="Projects"> Projetos </a>
@@ -114,7 +110,7 @@
             </article>
 
             <!-- Conhecimentos -->
-            <article class="grid-card bg-grid radius">
+            <article class="grid-card bgc-grid radius">
                <a href="#"><img src="img/knowledge.png" alt="Knowledge"></a>
                <div class="textos">
                    <a href="#" name="Knowledge"> Conhecimento </a>
@@ -130,29 +126,25 @@
         </main>
 
         <!-- Informações -->
-        <section class="container informacoes bg-claro">
+        <section class="conteudo informacoes bgc-claro">
            <h2> Mais informações! </h2>
-           <h3>  Deixe aqui seu e-mail que entrarei em contato. </h3>
+           <h3 id="rodape"></h3>
            <form>
-              <input class="bg-escuro radius" type="email" name="email" placeholder="Em construção">
-              <button class="bg-escuro radius"> Cadastrar </button>
+              <input class="bgc-escuro radius" type="email" name="email" placeholder="Em construção">
+              <button class="bgc-escuro radius"> Pesquisar </button>
            </form>
         </section>
 
         <!-- Rodapé -->
-        <footer class="container rodape bg-body">
-        
-          <div class="redes-sociais-icones">
-            <a href="https://www.linkedin.com/in/angelitasantos/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/angelitasantos" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://twitter.com/angelitasantos" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/angelitasantos/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/angelita.santos" target="_blank"><i class="fa fa-facebook"></i></a>
-          </div>
-        
-          <p class="copyright">
-            Copyright © AuroraTech 2020. Todos os direitos reservados.
-        
+        <footer class="conteudo bgc-body">
+            <div class="redes-sociais-icones">
+                <a target="_blank" href="https://www.linkedin.com/in/angelitasantos/">  <i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/angelitasantos">            <i class="fa fa-github"></i></a>
+                <a target="_blank" href="https://twitter.com/angelitasantos">           <i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/angelitasantos/">    <i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/angelita.santos">     <i class="fa fa-facebook"></i></a>
+            </div>
+            <p id="copyright"></p>
         </footer>       
         
         <script type="text/javascript" src="js/script.js"></script>
